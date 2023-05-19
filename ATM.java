@@ -86,3 +86,17 @@ public class Menu {
         }
     }
 }
+import java.util.Scanner;
+
+public class InputReader {
+    private Scanner scanner;
+
+    public InputReader() {
+        this.scanner = new Scanner(System.in);
+    }
+
+    public int readInt(String message) {
+        System.out.print(message);
+        return scanner.nextInt();
+    }
+}
