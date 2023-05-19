@@ -35,3 +35,10 @@ public class ATM {
         return balance;
     }
 }
+public class ATMMain {
+    public static void main(String[] args) {
+        ATM atm = new ATM(100000, 30000);
+        Menu menu = new Menu(atm);
+        menu.run();
+    }
+}
